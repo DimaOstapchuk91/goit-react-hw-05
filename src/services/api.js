@@ -14,5 +14,51 @@ export const getMoviesData = async () => {
     options
   );
 
+  return data.results;
+};
+
+export const getSerchMovie = async query => {
+  console.log(query);
+  const { data } = await axios.get(
+    `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`,
+    options
+  );
+
+  return data.results;
+};
+
+// export const getConfigData = async () => {
+//   const { data } = await axios.get(
+//     'https://api.themoviedb.org/3/configuration',
+//     options
+//   );
+
+//   return data.results;
+// };
+
+export const getFullDataMovie = async moviesId => {
+  const { data } = await axios.get(
+    `https://api.themoviedb.org/3/movie/${moviesId}?language=en-US`,
+    options
+  );
+
   return data;
+};
+
+export const getDataCredits = async moviesId => {
+  const { data } = await axios.get(
+    `https://api.themoviedb.org/3/movie/${moviesId}/credits?language=en-US`,
+    options
+  );
+
+  return data.cast;
+};
+
+export const getDataReviews = async moviesId => {
+  const { data } = await axios.get(
+    `https://api.themoviedb.org/3/movie/${moviesId}/reviews?language=en-US&page=1`,
+    options
+  );
+
+  return data.results;
 };

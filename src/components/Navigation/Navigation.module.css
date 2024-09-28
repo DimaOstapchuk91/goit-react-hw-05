@@ -1,0 +1,34 @@
+.wraperNav {
+  width: 100%;
+  background-color: lightslategray;
+  height: 80px;
+  display: flex;
+  gap: 500px;
+  padding: 20px;
+  align-items: center;
+}
+
+.navTitle {
+  color: aliceblue;
+  border: 2px solid blue;
+  padding: 10px;
+}
+
+.navTitle span {
+  color: blue;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.active {
+  text-decoration: underline;
+}
