@@ -35,7 +35,7 @@ const MovieDetailsPage = () => {
   return (
     <div className={s.detailsWrap}>
       <div>
-        <NavLink to={goBack.current ?? '/movie'} className={s.goBack}>
+        <NavLink to={goBack.current ?? '/movies'} className={s.goBack}>
           ⬅ Go Back
         </NavLink>
       </div>

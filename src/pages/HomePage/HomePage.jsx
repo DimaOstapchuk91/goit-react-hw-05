@@ -4,21 +4,21 @@ import { getMoviesData } from '../../services/api';
 import Loader from '../../components/Loader/Loader';
 
 const HomePage = () => {
-  const [movie, setMovie] = useState();
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     const getData = async () => {
       const data = await getMoviesData();
-      setMovie(data);
+      setMovies(data);
     };
     getData();
   }, []);
 
-  if (!movie) return <Loader />;
+  if (!movies) return <Loader />;
 
   return (
     <div>
-      <MovieList movieData={movie} />
+      <MovieList movieData={movies} />
     </div>
   );
 };
