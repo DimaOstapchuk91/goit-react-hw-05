@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import s from './Navigation.module.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   const changeClassLink = ({ isActive }) => {
@@ -9,9 +9,11 @@ const Navigation = () => {
 
   return (
     <div className={s.wraperNav}>
-      <h2 className={s.navTitle}>
-        Good <span>Cinema</span>
-      </h2>
+      <Link to='/'>
+        <h2 className={s.navTitle}>
+          Good <span>Cinema</span>
+        </h2>
+      </Link>
       <nav className={s.nav}>
         <NavLink to='/' className={changeClassLink}>
           Home

@@ -1,0 +1,45 @@
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.reviewItem {
+  display: flex;
+  gap: 50px;
+  background-color: rgb(106, 130, 153);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.reviewInfo {
+  padding: 16px;
+}
+
+.reviewImg {
+  object-fit: cover;
+}
+
+.reviewTitle {
+  color: rgb(4, 74, 153);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.reviewTitle span {
+  color: aliceblue;
+}
+
+.reviewComment {
+  color: aliceblue;
+}
+
+.notFoundData {
+  text-align: center;
+  background-color: rgb(106, 130, 153);
+  border-radius: 16px;
+  color: aliceblue;
+  padding: 24px;
+  margin-bottom: 100px;
+}

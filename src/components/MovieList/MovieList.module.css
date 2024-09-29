@@ -5,3 +5,13 @@
   gap: 40px;
   justify-content: center;
 }
+
+.notFoundData {
+  background-color: rgb(74, 114, 151);
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  color: aliceblue;
+  border-radius: 16px;
+}

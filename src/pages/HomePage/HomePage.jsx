@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import MovieList from '../../components/MovieList/MovieList';
 import { getMoviesData } from '../../services/api';
+import Loader from '../../components/Loader/Loader';
 
 const HomePage = () => {
   const [movie, setMovie] = useState();
@@ -13,7 +14,8 @@ const HomePage = () => {
     getData();
   }, []);
 
-  if (!movie) return <h2>Loading....</h2>;
+  if (!movie) return <Loader />;
+
   return (
     <div>
       <MovieList movieData={movie} />

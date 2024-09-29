@@ -1,0 +1,120 @@
+.movieWrap {
+  display: flex;
+  gap: 200px;
+  background-color: lightslategray;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.moviePoster {
+  height: 600px;
+}
+
+.movieInfo {
+  padding: 60px;
+  color: aliceblue;
+}
+
+.titleMovie {
+  font-size: 60px;
+  color: rgb(13, 16, 218);
+  font-weight: bolt;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: rgb(106, 130, 153);
+  margin-bottom: 16px;
+}
+
+.ratingMovie {
+  padding: 10px 20px;
+  font-weight: 24px;
+  color: rgb(4, 74, 153);
+  font-weight: bold;
+  background-color: rgb(106, 130, 153);
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.ratingMovie span {
+  color: aliceblue;
+}
+
+.owerviewWrap {
+  padding: 10px 20px;
+  background-color: rgb(106, 130, 153);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.miniTitle {
+  color: rgb(4, 74, 153);
+  margin-bottom: 6px;
+}
+
+.genresWrap {
+  padding: 10px 20px;
+  background-color: rgb(106, 130, 153);
+  border-radius: 8px;
+}
+
+.genres {
+  display: flex;
+  gap: 16px;
+}
+
+.addit {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 468px;
+  background-color: rgb(106, 130, 153);
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.infoList {
+  display: flex;
+
+  gap: 44px;
+  color: aliceblue;
+}
+
+.link {
+  color: aliceblue;
+  font-weight: bold;
+  transition: all 300ms ease;
+}
+
+.link:hover {
+  color: rgb(4, 74, 153);
+}
+
+.additTitle {
+  color: rgb(4, 74, 153);
+}
+
+.active {
+  color: rgb(13, 16, 218);
+  text-decoration: underline;
+}
+
+.goBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-weight: bold;
+  background-color: rgb(74, 114, 151);
+  padding: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 140px;
+  border-radius: 6px;
+  transition: all 300ms ease;
+}
+
+.goBack:hover {
+  background-color: rgb(58, 107, 153);
+}

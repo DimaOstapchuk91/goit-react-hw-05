@@ -1,0 +1,38 @@
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 100px;
+}
+
+.itemCast {
+  max-width: 200px;
+}
+
+.castImg {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.castInfo {
+  padding: 10px;
+  background-color: rgb(106, 130, 153);
+  height: 80px;
+  border-radius: 0 0 8px 8px;
+}
+
+.nameCast {
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+  margin-bottom: 8px;
+}
+
+.character span {
+  color: rgb(4, 74, 153);
+}
+
+.character {
+  color: aliceblue;
+}
