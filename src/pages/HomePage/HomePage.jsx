@@ -14,7 +14,7 @@ const HomePage = () => {
     getData();
   }, []);
 
-  if (!movies) return <Loader />;
+  if (!movies.length) return <Loader />;
 
   return (
     <div>
